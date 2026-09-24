@@ -18,5 +18,8 @@
     "@types/node": "^20.19.0",
     "typescript": "^5.9.3",
     "wrangler": "^4.86.0"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }
