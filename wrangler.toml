@@ -1,0 +1,19 @@
+name = "landthatrole-mcp"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Cloudflare creates the DNS record for the subdomain on deploy
+routes = [{ pattern = "mcp.landthatrole.com", custom_domain = true }]
+
+[vars]
+SITE_URL = "https://www.landthatrole.com"
+
+# Calls the website's Worker directly (no public internet hop). Without this binding the
+# server falls back to fetching SITE_URL, which is what a fork deployed elsewhere does.
+[[services]]
+binding = "SITE"
+service = "landthatrole"
+
+[observability]
+enabled = true

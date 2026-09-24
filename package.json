@@ -1,0 +1,22 @@
+{
+  "name": "landthatrole-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MCP server for LANDTHATROLE: search tech jobs in the United States and Canada from Claude, ChatGPT, Cursor and other AI apps.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "node --no-warnings --test \"test/*.test.mjs\"",
+    "typecheck": "tsc --noEmit",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.1.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.86.0"
+  }
+}

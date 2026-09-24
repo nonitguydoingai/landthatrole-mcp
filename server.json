@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.landthatrole/jobs",
+  "title": "LANDTHATROLE Jobs",
+  "description": "Search open tech jobs in the US and Canada, straight from employers' own hiring systems.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/nonitguydoingai/landthatrole-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.landthatrole.com/mcp"
+    }
+  ]
+}
